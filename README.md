@@ -6,8 +6,8 @@ IRIS classification with Nueral Network
 * iris-study は、DL用のフレームワークやライブラリを使わずに作成
 * sklearn の IRIS Dataset を用いて、iris の雄しべと雌しべの長さと幅から種類を予測する
 * 事前データ
-    入力データ ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
-    訓練データ ['setosa', 'versicolor', 'virginica']
+    * 入力データ ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+    * 訓練データ ['setosa', 'versicolor', 'virginica']
 
 * Nueral Network の基本的な構成
     + 入力層
