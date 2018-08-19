@@ -34,27 +34,32 @@ IRIS classification with Nueral Network
     
 
 ## 2. 主な関数
-* relu(x)
-    * ReLU関数
-* softmax(x)
-    * ソフトマックス関数
-* d_relu(x)
-    * ReLU関数の導関数
-* d_softmax_with_loss
-    * ソフトマックスとクロスエントロピーの複合導関数
-* cross_entropy_error(d, y)
-    * クロスエントロピー関数
-* accuracy(d, y)
-    * 精度計算
-* init_network()
-    * ネットワークの重みとバイアスの初期値設定 (He)
-* Dropout
-    * ドロップアウトのクラス
-    * メソッド
-        * forward(x, train_flg)
-        * backward(dout)
-* forward(network, x, train_fg)
-    * ネットワークの順伝搬
-* backward(x, d, z1, z2, z3, y, dropout)
-    * ネットワークの誤差逆伝搬
+<dl>
+    <dt>relu(x)</dt>
+    <dd>ReLU関数</dd>
+    <dt>softmax(x)</dt>
+    <dd>ソフトマックス関数</dd>
+    <dt>d_relu(x)</dt>
+    <dd>ReLU関数の導関数</dd>
+    <dt>d_softmax_with_loss(x)</dt>
+    <dd>ソフトマックスとクロスエントロピーの複合導関数</dd>
+    <dt>cross_entropy_error(d, y)</dt>
+    <dd>クロスエントロピー関数</dd>
+    <dt>accuracy(d, y)</dt>
+    <dd>精度計算</dd>
+    <dt>init_network()</dt>
+    <dd>ネットワークの重みとバイアスの初期値設定 (He)</dd>
+    <dt>Dropout</dt>
+    <dd>ドロップアウトのクラス</dd>
+    <dd>メソッド</dd>
+    <dl>
+        <dt>forward(x, train_flg)</dt>
+        <dt>backward(dout)</dt>
+    </dl>
+    <dt>forward(network, x, train_fg)</dt>
+    <dd>ネットワークの順伝搬</dd>
+    <dt>backward(x, d, z1, z2, z3, y, dropout)</dt>
+    <dd>ネットワークの誤差逆伝搬</dd>
+</dl>
+
     
