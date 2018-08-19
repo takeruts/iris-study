@@ -10,12 +10,9 @@ IRIS classification with Nueral Network
     * 出力データ ['setosa', 'versicolor', 'virginica']
 
 * Nueral Network の構成
-    | 入力層 |
-    ---------------------
-    | 隠れ層１ 64 Nueron |
-    -------| ------------
-    | ドロップアウト層１   |
-    ---------------------
+    + 入力層
+    + 隠れ層１ 64 Nueron
+    ドロップアウト層１
     + 活性化関数(ReLU)
     + 隠れ層２ - 128 Nueron
     + ドロップアウト層２
@@ -55,15 +52,16 @@ IRIS classification with Nueral Network
     <dd>ネットワークの重みとバイアスの初期値設定 (He)</dd>
     <dt>Dropout</dt>
     <dd>ドロップアウトのクラス</dd>
-    <dd>メソッド</dd>
-    <dl>
-        <dt>forward(x, train_flg)</dt>
-        <dt>backward(dout)</dt>
-    </dl>
+    <dd>メソッド</br>
+            * forward(x, train_flg)
+            * backward(dout)
+    </dd>
     <dt>forward(network, x, train_fg)</dt>
     <dd>ネットワークの順伝搬</dd>
     <dt>backward(x, d, z1, z2, z3, y, dropout)</dt>
     <dd>ネットワークの誤差逆伝搬</dd>
 </dl>
 
+## 3. 結果
+<img src="output.jpg", alt="output.jpg", title="Output">
 
