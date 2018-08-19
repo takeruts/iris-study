@@ -10,9 +10,12 @@ IRIS classification with Nueral Network
     * 出力データ ['setosa', 'versicolor', 'virginica']
 
 * Nueral Network の構成
-    + 入力層
-    + 隠れ層１ - 64 Nueron
-    + ドロップアウト層１
+    | 入力層 |
+    ---------------------
+    | 隠れ層１ 64 Nueron |
+    -------| ------------
+    | ドロップアウト層１   |
+    ---------------------
     + 活性化関数(ReLU)
     + 隠れ層２ - 128 Nueron
     + ドロップアウト層２
