@@ -9,17 +9,25 @@ IRIS classification with Nueral Network
     * 入力データ ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
     * 出力データ ['setosa', 'versicolor', 'virginica']
 
-* Nueral Network の構成
+## 2. Nueral Network の構成
     + 入力層
+
+
     + 隠れ層１ 64 Nueron
-    ドロップアウト層１
+    + ドロップアウト１
     + 活性化関数(ReLU)
+
+
     + 隠れ層２ - 128 Nueron
-    + ドロップアウト層２
+    + ドロップアウト２
     + 活性化関数(ReLU)
+
+
     + 隠れ層３ - 128 Nueron
-    + ドロップアウト層３
+    + ドロップアウト３
     + 活性化関数(ReLU)
+
+
     + 出力層（Softmax)
 
 * パラメーター
@@ -31,10 +39,10 @@ IRIS classification with Nueral Network
     * 学習率最適化手法 Adam
     * 学習率 0.001
     * L2正則化
-    * ドロップアウト 0.3
+    * ドロップアウト 0.4
     
 
-## 2. 主な関数
+## 3. 主な関数
 <dl>
     <dt>relu(x)</dt>
     <dd>ReLU関数</dd>
@@ -62,6 +70,6 @@ IRIS classification with Nueral Network
     <dd>ネットワークの誤差逆伝搬</dd>
 </dl>
 
-## 3. 結果
+## 4. 結果
 <img src="output.jpg", alt="output.jpg", title="Output">
 
