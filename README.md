@@ -36,7 +36,7 @@ IRIS classification with Nueral Network
 
 ## 2. 主な関数
 * relu(x)
-    * ReLU関数
+** ReLU関数
 * softmax(x)
     * ソフトマックス関数
 * d_relu(x)
