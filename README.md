@@ -9,7 +9,7 @@ IRIS classification with Nueral Network
     * 入力データ ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
     * 訓練データ ['setosa', 'versicolor', 'virginica']
 
-* Nueral Network の基本的な構成
+* Nueral Network の構成
     + 入力層
     + 隠れ層１ - 64 Nueron
     + ドロップアウト層１
@@ -21,7 +21,8 @@ IRIS classification with Nueral Network
     + ドロップアウト層３
     + 活性化関数(ReLU)
     + 出力層（Softmax)
-    
+
+* パラメーター
     * 学習データ 120
     * テストデータ 30
     * バッチサイズ 40
@@ -62,4 +63,4 @@ IRIS classification with Nueral Network
     <dd>ネットワークの誤差逆伝搬</dd>
 </dl>
 
-    
+
