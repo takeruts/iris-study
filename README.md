@@ -10,36 +10,33 @@ IRIS classification with Nueral Network
     * 出力データ ['setosa', 'versicolor', 'virginica']
 
 ## 2. Nueral Network の構成
-    + 入力層
-
-
-    + 隠れ層１ 64 Nueron
+### 2.1 トポロジー
++ 入力層
++ 隠れ層１
+    + 64 Nodes
     + ドロップアウト１
-    + 活性化関数(ReLU)
-
-
-    + 隠れ層２ - 128 Nueron
+    + 活性化関数(ReLU)    
++ 隠れ層２
+    + 128 Ndoes
     + ドロップアウト２
-    + 活性化関数(ReLU)
-
-
-    + 隠れ層３ - 128 Nueron
+    + 活性化関数(ReLU)    
++ 隠れ層３
+    + 128 Nodese
     + ドロップアウト３
     + 活性化関数(ReLU)
++ 出力層
+    + 活性化関数(Softmax)
 
-
-    + 出力層（Softmax)
-
-* パラメーター
-    * 学習データ 120
-    * テストデータ 30
-    * バッチサイズ 40
-    * 誤差関数　クロスエントロピー
-    * 重みの初期値設定  He
-    * 学習率最適化手法 Adam
-    * 学習率 0.001
-    * L2正則化
-    * ドロップアウト 0.4
+### 2.2 パラメーター
+* 学習データ 120
+* テストデータ 30
+* バッチサイズ 40
+* 誤差関数　クロスエントロピー
+* 重みの初期値設定  He
+* 学習率最適化手法 Adam
+* 学習率 0.001
+* L2正則化
+* ドロップアウト 0.4
     
 
 ## 3. 主な関数
@@ -60,9 +57,9 @@ IRIS classification with Nueral Network
     <dd>ネットワークの重みとバイアスの初期値設定 (He)</dd>
     <dt>Dropout</dt>
     <dd>ドロップアウトのクラス</dd>
-    <dd>メソッド</br>
-            * forward(x, train_flg)
-            * backward(dout)
+    <dd>メソッド<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;forward(x, train_flg)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;backward(dout)
     </dd>
     <dt>forward(network, x, train_fg)</dt>
     <dd>ネットワークの順伝搬</dd>
