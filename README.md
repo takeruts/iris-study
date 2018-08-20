@@ -5,7 +5,7 @@ IRIS classification with Nueral Network
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
 * iris-study は、DL用のフレームワークやライブラリを使わずに作成
 * sklearn の IRIS Dataset を用いて、iris の雄しべと雌しべの長さと幅から種類を予測する
-* 事前データ
+* 使用データ
     * 入力データ ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
     * 出力データ ['setosa', 'versicolor', 'virginica']
 
@@ -38,8 +38,10 @@ IRIS classification with Nueral Network
 * L2正則化
 * ドロップアウト 0.4
     
+## 3. ニューラルネットワークの構造図
 
-## 3. 主な関数
+## 4. 主な関数
+
 <dl>
     <dt>relu(x)</dt>
     <dd>ReLU関数</dd>
@@ -61,12 +63,12 @@ IRIS classification with Nueral Network
         &nbsp;&nbsp;&nbsp;&nbsp;forward(x, train_flg)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;backward(dout)
     </dd>
-    <dt>forward(network, x, train_fg)</dt>
+    <dt>forward(network, x, train_flg)</dt>
     <dd>ネットワークの順伝搬</dd>
     <dt>backward(x, d, z1, z2, z3, y, dropout)</dt>
     <dd>ネットワークの誤差逆伝搬</dd>
 </dl>
 
-## 4. 結果
+## 5. 結果
 <img src="output.jpg", alt="output.jpg", title="Output">
 
