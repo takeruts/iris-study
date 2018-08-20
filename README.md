@@ -1,5 +1,7 @@
 # iris-study
-IRIS classification with Nueral Network 
+IRIS classification with Nueral Network
+
+$\LaTeX$
 
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
@@ -37,8 +39,31 @@ IRIS classification with Nueral Network
 * 学習率 0.001
 * L2正則化
 * ドロップアウト 0.4
-    
+
 ## 3. ニューラルネットワークの構造図
+[事前に用意する情報]
+
+入力: $x_n = [x_{n1} .. x_{nl}]$
+
+訓練データ: $d_n = [d_{n1} .. d_{nk}]$
+
+[多層ネットワークのパラメータ]
+$$
+重み: w^l = \left[
+    \begin{array}{rrr}
+      w^l_{11} & .. & w^l_{1l} \\
+      : & .. & : \\
+      w^l_{j1} & .. & w^1_{jl}
+    \end{array}\right] \\
+バイアス: b^l = \left[\begin{array}{rrr} b^l_1 .. b^l_j\end{array}\right]
+$$
+活性化関数: $f^l(u^l) = [f^l(u^l_1) .. f^l(u^l_j)]$
+
+中間層出力: $z^l = [z^l .. z^k] = f^l(u^l)$
+
+総入力: $u^l = W^l_{(l-1)}$
+
+<img src="nn_structure.jpg", alt="nn_structure.jpg", title="NN Structure", width=960, height=480>
 
 ## 4. 主な関数
 
@@ -71,4 +96,3 @@ IRIS classification with Nueral Network
 
 ## 5. 結果
 <img src="output.jpg", alt="output.jpg", title="Output">
-
