@@ -1,7 +1,8 @@
 # iris-study
 IRIS classification with Nueral Network
-
-$\LaTeX$
+```math
+\LaTeX$
+```
 
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
@@ -41,6 +42,7 @@ $\LaTeX$
 * ドロップアウト 0.4
 
 ## 3. ニューラルネットワークの構造図
+```math
 [事前に用意する情報]
 
 入力: $x_n = [x_{n1} .. x_{nl}]$
@@ -62,7 +64,7 @@ $$
 中間層出力: $z^l = [z^l .. z^k] = f^l(u^l)$
 
 総入力: $u^l = W^l_{(l-1)}$
-
+```
 <img src="nn_structure.jpg", alt="nn_structure.jpg", title="NN Structure", width=960, height=480>
 
 ## 4. 主な関数
