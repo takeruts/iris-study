@@ -1,8 +1,7 @@
 # iris-study
 IRIS classification with Nueral Network
-```math
-\LaTeX$
-```
+
+$\LaTeX$
 
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
@@ -42,7 +41,7 @@ IRIS classification with Nueral Network
 * ドロップアウト 0.4
 
 ## 3. ニューラルネットワークの構造図
-```math
+
 [事前に用意する情報]
 
 入力: $x_n = [x_{n1} .. x_{nl}]$
@@ -50,22 +49,29 @@ IRIS classification with Nueral Network
 訓練データ: $d_n = [d_{n1} .. d_{nk}]$
 
 [多層ネットワークのパラメータ]
-$$
-重み: w^l = \left[
+
+$重み: w^l = \left[
     \begin{array}{rrr}
       w^l_{11} & .. & w^l_{1l} \\
       : & .. & : \\
       w^l_{j1} & .. & w^1_{jl}
-    \end{array}\right] \\
-バイアス: b^l = \left[\begin{array}{rrr} b^l_1 .. b^l_j\end{array}\right]
-$$
-活性化関数: $f^l(u^l) = [f^l(u^l_1) .. f^l(u^l_j)]$
+    \end{array}\right]$
 
-中間層出力: $z^l = [z^l .. z^k] = f^l(u^l)$
+$バイアス: b^l = \left[\begin{array}{rrr} b^l_1 .. b^l_j\end{array}\right]$
 
-総入力: $u^l = W^l_{(l-1)}$
-```
+$活性化関数: $f^l(u^l) = [f^l(u^l_1) .. f^l(u^l_j)]$
+
+$中間層出力: z^l = [z^l .. z^k] = f^l(u^l)$
+
+$総入力: u^l = W^l z^{l-1} + b^l $
+
+$出力: y^l_n = [y^l_{n1} .. y^l_{n4}] = z^L$
+
+$誤差関数: E^n(w)$
+
 <img src="nn_structure.jpg", alt="nn_structure.jpg", title="NN Structure", width=960, height=480>
+
+$w^{l-1} = w^l -\epsilon \nabla E_n(w) \longleftarrow \nabla E_n(w) =  \frac{\partial E}{\partial w}$
 
 ## 4. 主な関数
 
