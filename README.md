@@ -1,7 +1,7 @@
 # iris-study
 IRIS classification with Nueral Network
 
-ソースコード: iris.ipynb
+ソースコード: [iris.ipynb](https://github.com/takeruts/iris-study/blob/master/iris.ipynb)
 
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
