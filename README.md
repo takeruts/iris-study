@@ -3,6 +3,11 @@ IRIS classification with Nueral Network
 
 ソースコード: iris.ipynb
 
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
+\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
 * iris-study は、DL用のフレームワークやライブラリを使わずに作成
@@ -70,8 +75,6 @@ IRIS classification with Nueral Network
 ![NN Structure](nn_structure.jpg)
 
 <img src="https://latex.codecogs.com/gif.latex?w^{l-1}&space;=&space;w^l&space;-\epsilon&space;\nabla&space;E_n(w)&space;\longleftarrow&space;\nabla&space;E_n(w)&space;=&space;\frac{\partial&space;E}{\partial&space;w}"/>
-
-
 
 ## 4. 結果
 
