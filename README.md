@@ -1,15 +1,15 @@
 # iris-study
 IRIS classification with Nueral Network
 
-$\LaTeX$
+ソースコード: iris.ipynb
 
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
 * iris-study は、DL用のフレームワークやライブラリを使わずに作成
 * sklearn の IRIS Dataset を用いて、iris の雄しべと雌しべの長さと幅から種類を予測する
 * 使用データ
-    * 入力データ ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
-    * 出力データ ['setosa', 'versicolor', 'virginica']
+    * 入力データ: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+    * 出力データ:  ['setosa', 'versicolor', 'virginica']
 
 ## 2. Nueral Network の構成
 ### 2.1 トポロジー
@@ -30,27 +30,28 @@ $\LaTeX$
     + 活性化関数(Softmax)
 
 ### 2.2 パラメーター
-* 学習データ 120
-* テストデータ 30
-* バッチサイズ 40
-* 誤差関数　クロスエントロピー
-* 重みの初期値設定  He
-* 学習率最適化手法 Adam
-* 学習率 0.001
+* 学習データ: 120
+* テストデータ: 30
+* バッチサイズ: 40
+* 繰り返し: 1,000 iteration x 10 データセット
+* 誤差関数:　クロスエントロピー
+* 重みの初期値設定:  He
+* 学習率最適化手法: Adam
+* 学習率: 0.001
 * L2正則化
-* ドロップアウト 0.4
+* ドロップアウト: 0.4
 
 ## 3. ニューラルネットワークの構造図
 
-[事前に用意する情報]
-
-入力: $x_n = [x_{n1} .. x_{nl}]$
-
-訓練データ: $d_n = [d_{n1} .. d_{nk}]$
-
-[多層ネットワークのパラメータ]
+[tex:{ \frac{d}{dx} \int_a\^x f(t) \\: dt = f(x) }]
 
 $$
+[事前に用意する情報] \\
+入力: x_n = [x_{n1} .. x_{nl}] \\
+訓練データ: d_n = [d_{n1} .. d_{nk}] \\
+[事前に用意する情報] \\
+
+[多層ネットワークのパラメータ] \\
 重み: w^l = \left[
     \begin{array}{rrr}
       w^l_{11} & .. & w^l_{1l} \\
@@ -63,7 +64,7 @@ $$
 総入力: u^l = W^l z^{l-1} + b^l \\
 出力: y^l_n = [y^l_{n1} .. y^l_{n4}] = z^L \\
 誤差関数: E^n(w) \\
-w^{l-1} = w^l -\epsilon \nabla E_n(w) \longleftarrow \nabla E_n(w) =  \frac{\partial E}{\partial w} \\
+w^{l-1} = w^l -\epsilon \nabla E_n(w) \longleftarrow \nabla E_n(w) =  \frac{\partial E}{\partial w}
 $$
 
 ![NN Structure](nn_structure.jpg)
