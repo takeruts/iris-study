@@ -3,11 +3,6 @@ IRIS classification with Nueral Network
 
 ソースコード: iris.ipynb
 
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
-\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
-
 ## 1. iris-study の目的
 * iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
 * iris-study は、DL用のフレームワークやライブラリを使わずに作成
@@ -48,33 +43,8 @@ IRIS classification with Nueral Network
 
 ## 3. ニューラルネットワークの構造図
 
-
-[事前に用意する情報]
-
-入力: <img src="https://latex.codecogs.com/gif.latex?x_n&space;=&space;[x_{n1}&space;..&space;x_{nl}]"/>
-
-訓練データ: <img src="https://latex.codecogs.com/gif.latex?d_n&space;=&space;[d_{n1}&space;..&space;d_{nk}]"/>
-
-[多層ネットワークのパラメータ]
-
-重み: <img src="https://latex.codecogs.com/gif.latex?w^l&space;=&space;\left[&space;\begin{array}{rrr}&space;w^l_{11}&space;&&space;..&space;&&space;w^l_{1l}&space;\\&space;:&space;&&space;..&space;&&space;:&space;\\&space;w^l_{j1}&space;&&space;..&space;&&space;w^1_{jl}&space;\end{array}\right]"/>  
-
-バイアス:
-<img src="https://latex.codecogs.com/gif.latex?b^l&space;=&space;\left[\begin{array}{rrr}&space;b^l_1&space;..&space;b^l_j\end{array}\right]"/>
-
-活性化関数: <img src="https://latex.codecogs.com/gif.latex?f^l(u^l)&space;=&space;[f^l(u^l_1)&space;..&space;f^l(u^l_j)]"/>
-
-中間層出力: <img src="https://latex.codecogs.com/gif.latex?z^l&space;=&space;[z^l&space;..&space;z^k]&space;=&space;f^l(u^l)"/>
-
-総入力: <img src="https://latex.codecogs.com/gif.latex?u^l&space;=&space;W^l&space;z^{l-1}&space;&plus;&space;b^l"/>
-
-出力: <img src="https://latex.codecogs.com/gif.latex?y^l_n&space;=&space;[y^l_{n1}&space;..&space;y^l_{n4}]&space;=&space;z^L"/>
-
-誤差関数: <img src="https://latex.codecogs.com/gif.latex?E^n(w)"/>
-
+![NN Parameters](nn_parameters.jpg)
 ![NN Structure](nn_structure.jpg)
-
-<img src="https://latex.codecogs.com/gif.latex?w^{l-1}&space;=&space;w^l&space;-\epsilon&space;\nabla&space;E_n(w)&space;\longleftarrow&space;\nabla&space;E_n(w)&space;=&space;\frac{\partial&space;E}{\partial&space;w}"/>
 
 ## 4. 結果
 
