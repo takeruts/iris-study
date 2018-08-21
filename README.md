@@ -43,31 +43,35 @@ IRIS classification with Nueral Network
 
 ## 3. ニューラルネットワークの構造図
 
-[tex:{ \frac{d}{dx} \int_a\^x f(t) \\: dt = f(x) }]
 
-$$
-[事前に用意する情報] \\
-入力: x_n = [x_{n1} .. x_{nl}] \\
-訓練データ: d_n = [d_{n1} .. d_{nk}] \\
-[事前に用意する情報] \\
+[事前に用意する情報]
 
-[多層ネットワークのパラメータ] \\
-重み: w^l = \left[
-    \begin{array}{rrr}
-      w^l_{11} & .. & w^l_{1l} \\
-      : & .. & : \\
-      w^l_{j1} & .. & w^1_{jl}
-    \end{array}\right] \\
-バイアス: b^l = \left[\begin{array}{rrr} b^l_1 .. b^l_j\end{array}\right] \\
-活性化関数: $f^l(u^l) = [f^l(u^l_1) .. f^l(u^l_j)] \\
-中間層出力: z^l = [z^l .. z^k] = f^l(u^l) \\
-総入力: u^l = W^l z^{l-1} + b^l \\
-出力: y^l_n = [y^l_{n1} .. y^l_{n4}] = z^L \\
-誤差関数: E^n(w) \\
-w^{l-1} = w^l -\epsilon \nabla E_n(w) \longleftarrow \nabla E_n(w) =  \frac{\partial E}{\partial w}
-$$
+入力: <img src="https://latex.codecogs.com/gif.latex?x_n&space;=&space;[x_{n1}&space;..&space;x_{nl}]"/>
+
+訓練データ: <img src="https://latex.codecogs.com/gif.latex?d_n&space;=&space;[d_{n1}&space;..&space;d_{nk}]"/>
+
+[多層ネットワークのパラメータ]
+
+重み: <img src="https://latex.codecogs.com/gif.latex?w^l&space;=&space;\left[&space;\begin{array}{rrr}&space;w^l_{11}&space;&&space;..&space;&&space;w^l_{1l}&space;\\&space;:&space;&&space;..&space;&&space;:&space;\\&space;w^l_{j1}&space;&&space;..&space;&&space;w^1_{jl}&space;\end{array}\right]"/>  
+
+バイアス:
+<img src="https://latex.codecogs.com/gif.latex?b^l&space;=&space;\left[\begin{array}{rrr}&space;b^l_1&space;..&space;b^l_j\end{array}\right]"/>
+
+活性化関数: <img src="https://latex.codecogs.com/gif.latex?f^l(u^l)&space;=&space;[f^l(u^l_1)&space;..&space;f^l(u^l_j)]"/>
+
+中間層出力: <img src="https://latex.codecogs.com/gif.latex?z^l&space;=&space;[z^l&space;..&space;z^k]&space;=&space;f^l(u^l)"/>
+
+総入力: <img src="https://latex.codecogs.com/gif.latex?u^l&space;=&space;W^l&space;z^{l-1}&space;&plus;&space;b^l"/>
+
+出力: <img src="https://latex.codecogs.com/gif.latex?y^l_n&space;=&space;[y^l_{n1}&space;..&space;y^l_{n4}]&space;=&space;z^L"/>
+
+誤差関数: <img src="https://latex.codecogs.com/gif.latex?E^n(w)"/>
 
 ![NN Structure](nn_structure.jpg)
+
+<img src="https://latex.codecogs.com/gif.latex?w^{l-1}&space;=&space;w^l&space;-\epsilon&space;\nabla&space;E_n(w)&space;\longleftarrow&space;\nabla&space;E_n(w)&space;=&space;\frac{\partial&space;E}{\partial&space;w}"/>
+
+
 
 ## 4. 結果
 
