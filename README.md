@@ -68,8 +68,11 @@ $$
 
 ![NN Structure](nn_structure.jpg)
 
+## 4. 結果
 
-## 4. 主な関数
+![Output](output.jpg)
+
+## 5. 主な関数
 
 <dl>
     <dt>relu(x)</dt>
@@ -97,7 +100,3 @@ $$
     <dt>backward(x, d, z1, z2, z3, y, dropout)</dt>
     <dd>ネットワークの誤差逆伝搬</dd>
 </dl>
-
-## 5. 結果
-
-![Output](output.jpg)
