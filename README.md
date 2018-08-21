@@ -43,8 +43,8 @@ IRIS classification with Nueral Network
 
 ## 3. ニューラルネットワークの構造図
 
-![NN Parameters](nn_parameters.jpg)
 ![NN Structure](nn_structure.jpg)
+![NN Parameters](nn_parameters.jpg)
 
 ## 4. 結果
 
