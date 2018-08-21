@@ -66,7 +66,7 @@ $$
 w^{l-1} = w^l -\epsilon \nabla E_n(w) \longleftarrow \nabla E_n(w) =  \frac{\partial E}{\partial w} \\
 $$
 
-<img src="https://github.com/takeruts/iris-study/blob/master/nn_structure.jpg", alt="nn_structure.jpg", title="NN Structure", width=640, height=360>
+![NN Structure](nn_structure.jpg)
 
 
 ## 4. 主な関数
@@ -99,4 +99,5 @@ $$
 </dl>
 
 ## 5. 結果
-<img src="https://github.com/takeruts/iris-study/blob/master/output.jpg", alt="output.jpg", title="Output">
+
+![Output](output.jpg)
