@@ -6,9 +6,9 @@ IRIS classification with Nueral Network
 ソースコード: [iris.ipynb](https://github.com/takeruts/iris-study/blob/master/iris.ipynb)
 
 ## 1. iris-study の目的
-* iris-study は、Deep Learning における Nueral Network 作成に関するレポートである
+* iris-study は、Deep Learning における Nueral Network 作成に関するレポート
 * iris-study は、DL用のフレームワークやライブラリを使わずに作成
-* sklearn の IRIS Dataset を用いて、iris の雄しべと雌しべの長さと幅から種類を予測する
+* sklearn の IRIS Dataset を用いて、あやめ(iris) の雄しべと雌しべの長さと幅から、その種類を予測する
 * 使用データ
     * 入力データ: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
     * 出力データ:  ['setosa', 'versicolor', 'virginica']
